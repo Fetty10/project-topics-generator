@@ -1,1 +1,67 @@
+body {
+  background-color: aliceblue;
+  font-family: sans-serif, Helvetica, Arial;
+}
 
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #272044;
+  line-height: 1.5;
+  text-align: center;
+}
+a {
+  color: #016f8a;
+  text-decoration: none;
+}
+form {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  display: flex;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+.text-input {
+  padding: 20px;
+  width: 70%;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  font-size: 15px;
+  border-radius: 40px;
+  color: #272044;
+}
+
+.submit-button {
+  margin-left: 10px;
+  border: none;
+  font-size: 17px;
+  width: 120px;
+  border-radius: 40px;
+  background: #016f8a;
+  color: #fff;
+  padding: 14px 24px;
+}
+
+.project-topics {
+  background-color: #fff;
+  padding: 24px;
+  line-height: 2;
+  border-left: 1px solid #016f8a;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+  margin-bottom: 30px;
+}

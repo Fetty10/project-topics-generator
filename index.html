@@ -7,42 +7,44 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Generate Project Topics</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Generate Project Topics</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          autofocus
-          required
-          autocomplete="off"
-          placeholder="Enter your course of study and area of interest"
-        />
-        <input type="submit" />
-
-        <div>
+      <main>
+        <form>
+          <input
+            type="text"
+            autofocus
+            required
+            autocomplete="off"
+            class="text-input"
+            placeholder="Enter your course of study and area of interest here"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="project-topics">
           Here are your project Topics
           <br />
           Here are your project Topics
         </div>
-      </form>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Fetty10">Fetty</a> and it is
-      <a
-        href="https://github.com/Fetty10/project-topics-generator"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and
-      <a href="https://ipm-project-topics-generator.netlify.app/"
-        >hosted on Netlify</a
-      >
-    </footer>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Fetty10">Fetty</a> and it is
+        <a
+          href="https://github.com/Fetty10/project-topics-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and
+        <a href="https://ipm-project-topics-generator.netlify.app/"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
