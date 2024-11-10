@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Project Topics Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="project-topics-generator-form">
           <input
             type="text"
             autofocus
@@ -24,11 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="project-topics">
-          Here are your project Topics
-          <br />
-          Here are your project Topics
-        </div>
+        <div class="project-topics" id="project-topics"></div>
       </main>
       <footer>
         This AI project was coded by
