@@ -1,12 +1,24 @@
-function generateTopics(event) {
-  event.preventDefault();
-
+function displayTipics(response) {
   new Typewriter("#project-topics", {
-    strings: "Here are your project Topics",
+    strings: response.data.answer,
     autoStart: true,
     cursor: "✍🏽",
     delay: 80,
   });
+}
+
+function generateTopics(event) {
+  event.preventDefault();
+
+  let userInput = document.querySelector("#text-input");
+  let apiKey = "o74291bedbb48f3c3et5a5a6ad40853a";
+  let prompt = `Generate academic research topics based on ${userInput.value}, make it precise with no further explanation, add fullstop at the end of every topic and seperate each new number with a <br />. Sign the topics with By Fetty inside a <strong> element at the end of the topics`;
+  let context =
+    "You are and ai academic researcher, please provide the exact number of topics requested by the user";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  let topicElement = document.querySelector("#project-topics");
+  topicElement.innerHTML = "Generating your topic(s)... please wait";
+  axios.get(apiUrl).then(displayTipics);
 }
 
 let topicGenerator = document.querySelector("#project-topics-generator-form");
