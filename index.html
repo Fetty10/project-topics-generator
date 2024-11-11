@@ -15,19 +15,22 @@
       </header>
 
       <main>
-        <form id="project-topics-generator-form">
-          <input
-            type="text"
-            autofocus
-            required
-            autocomplete="off"
-            class="text-input"
-            id="text-input"
-            placeholder="Enter your course of study area of interest and number of topics"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="project-topics" id="project-topics"></div>
+        <div class="form-container">
+          <form id="project-topics-generator-form">
+            <input
+              type="text"
+              autofocus
+              required
+              autocomplete="off"
+              class="text-input"
+              id="text-input"
+              placeholder="Enter your course, area of interest and number of topics"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">Example: Geography, Climate Change, 3</div>
+        </div>
+        <div class="project-topics hidden" id="project-topics"></div>
       </main>
       <footer>
         This AI project was coded by
