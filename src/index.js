@@ -3,7 +3,7 @@ function displayTipics(response) {
     strings: response.data.answer,
     autoStart: true,
     cursor: "✍🏽",
-    delay: 50,
+    delay: 1,
   });
 }
 
